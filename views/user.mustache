@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Page</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body id="individual">
+    <div class="user-profile">
+      {{#userID}}
+      <section class="user-heading">
+        <img src="{{avatar}}" alt="avatar picture">
+        <div class="user-contact">
+          <h1>{{name}}</h1>
+          <p>{{#address.city}}{{address.city}}, {{address.country}}{{/address.city}}{{^address.city}}{{address.country}}{{/address.city}} | {{#job}}{{job}}, {{company}}{{/job}}{{^job}}<span class="available">Available for hire</span>{{/job}}</p>
+          <p>{{email}} | {{phone}}</p>
+        </div>
+      </section>
+      <table class="skills-table">
+        {{#university}}
+        <tr>
+          <th align="right">Education</th>
+          <td>{{university}}</td>
+        </tr>
+        {{/university}}
+        {{^university}}
+        {{/university}}
+        <tr>
+          <th valign="top" align="right">Skills</th>
+          <td>{{#skills}}{{.}}<br>{{/skills}}</td>
+        </tr>
+      </table>
+      {{/userID}}
+    </div>
+  </body>
+</html>
