@@ -2,10 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>LinkedIn for Robots</title>
     <link href="main.css" rel="stylesheet">
   </head>
-  <body id="home-page">
+  <header>
+    <h1>LinkedIn for Robots</h1>
+  </header>
+  <body class="user-page">
+    <div class="hire-links">
+      <a href="/for-hire">For Hire</a>
+      <a href="/employed">Currently Employed</a>
+    </div>
+
     {{#users}}
     <a class="users" id="{{id}}" href="user-{{id}}">
       <img src="{{avatar}}" alt="avatar picture">

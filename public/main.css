@@ -1,17 +1,43 @@
 * {
-box-sizing: border-box;
-margin: 0 auto;
-}
-
-body {
+  box-sizing: border-box;
+  margin: 0 auto;
   font-family: sans-serif;
 }
 
-#home-page {
+header {
+  padding-top: 2%;
+  text-align: center;
+  font-weight: 600;
+  color: blue;
+  flex-basis: 100%;
+}
+
+header h1 {
+  font-size: 3.5rem;
+}
+
+.user-page {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.hire-links {
+  padding: 2% 0%;
+  flex-basis: 99%;
+  display: flex;
+  flex-direction: row;
+}
+
+.hire-links a {
+  flex-basis: 40%;
+  text-decoration: none;
+  text-align: center;
+  padding: 2% 0%;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
 }
 
 .users {

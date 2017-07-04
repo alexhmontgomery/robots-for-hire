@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robots For-Hire</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <header>
+    <h1>Robots For Hire</h1>
+  </header>
+  <body class="user-page">
+    {{#unemployed}}
+    <a class="users" id="{{id}}" href="user-{{id}}">
+      <img src="{{avatar}}" alt="avatar picture">
+      <div class="users-info">
+        <h2>{{name}}</h2>
+        <p><span class="available">Available for hire</span></p>
+      </div>
+    </a>
+    {{/unemployed}}
+  </body>
+</html>
